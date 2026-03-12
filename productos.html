@@ -15,6 +15,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <menu class="navbar">
+        <a href="./index.html">
+            <h4>Inicio</h4>
+        </a>
+         <a href="./productos.html">
+            <h4>Productos</h4>
+        </a>
+         <a href="./contacto.html">
+            <h4>Contacto</h4>
+        </a>
+         <a id="sn" href="./sobrenosotros.html">
+            <h4>Sobre nosotros</h4>
+            </a>
+    </menu>
     <h1 id="formulario-titulo">Productos</h1>
     <div class="linea-horiz"></div>
     <div class="buscar">
@@ -22,20 +36,6 @@
      <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 
-    <script>
-        document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e){
-        e.preventDefault();
-
-        const url = this.href;
-
-        document.body.classList.add("fade-out");
-
-        setTimeout(() => {
-            window.location = url;
-        }, 500);
-    });
-});
-</script>
+   
 </body>
 </html>

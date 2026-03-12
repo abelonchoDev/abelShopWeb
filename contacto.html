@@ -14,28 +14,51 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <menu class="navbar">
+        <a href="./index.html">
+            <h4>Inicio</h4>
+        </a>
+         <a href="./productos.html">
+            <h4>Productos</h4>
+        </a>
+         <a href="./contacto.html">
+            <h4>Contacto</h4>
+        </a>
+         <a id="sn" href="./sobrenosotros.html">
+            <h4>Sobre nosotros</h4>
+            </a>
+    </menu>
     <h1 id="formulario-titulo">Completa el formulario:</h1>
 
-    <div class="formulario">
-        <label for="name">Nombre: <span class="obligatorio">*</span></label> 
-        <input type="text" placeholder="Inserta tu nombre completo">
-        <label for="name">Correo electrónico: <span class="obligatorio">*</span></label> 
-        <input type="email" placeholder="Inserta tu correo.">
-        <label for="name">Número de teléfono: <span class="obligatorio">*</span></label> 
-        <input type="tel" placeholder="Inserta tu número de teléfono.">
-        <label for="name">Comentarios (opcional):</label> 
-        <textarea id="comentarios" placeholder="¿Pregutas? ¿Comentarios?"></textarea>
+    <form name="contacto" method="POST" data-netlify="true" class="formulario">
 
-        
-    </div>
+<input type="hidden" name="form-name" value="contacto">
+
+<label>Nombre *</label>
+<input type="text" name="nombre" placeholder="Inserta tu nombre completo" required>
+
+<label>Correo electrónico *</label>
+<input type="email" name="email" placeholder="Inserta tu correo." required>
+
+<label>Número de teléfono *</label>
+<input type="tel" name="telefono" placeholder="Inserta tu número de teléfono." required>
+
+<label>Comentarios</label>
+<textarea name="comentarios" id="comentarios" placeholder="¿Preguntas? ¿Comentarios?"></textarea>
+
+
+
+</form>
     <button id="enviar-form">Enviar</button>
     <div id="mensaje-exito">
     <h2>¡Formulario enviado!</h2>
-    <p>Gracias por contactarnos 🚀</p>
+    <p>Gracias por contactarnos :)</p>
 </div>
 
 <style>
-
+p, h2{
+    font-family: "Lexend";
+}
 #mensaje-exito{
     position: fixed;
     top: 50%;
@@ -57,10 +80,6 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
-.formulario.fade{
-    opacity: 0.3;
-    transition: 0.5s;               
-}
 
 </style>
 
@@ -99,18 +118,6 @@ botonEnviar.addEventListener("click", () => {
         alert("⚠️ Completa los campos obligatorios.");
         return;
     }
-
-    formulario.classList.add("fade");
-
-    setTimeout(() => {
-        mensaje.classList.add("mostrar");
-    }, 300);
-
-    setTimeout(() => {
-        document.querySelectorAll("input, textarea").forEach(el => el.value = "");
-        formulario.classList.remove("fade");
-        mensaje.classList.remove("mostrar");
-    }, 3000);
 
 });
 

@@ -14,6 +14,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <menu class="navbar">
+        <a href="./index.html">
+            <h4>Inicio</h4>
+        </a>
+         <a href="./productos.html">
+            <h4>Productos</h4>
+        </a>
+         <a href="./contacto.html">
+            <h4>Contacto</h4>
+        </a>
+         <a id="sn" href="./sobrenosotros.html">
+            <h4>Sobre nosotros</h4>
+            </a>
+    </menu>
     <h1 id="formulario-titulo">Sobre Nosotros</h1>
     <div class="linea-horiz"></div>
 <div class="content">
@@ -30,20 +44,6 @@ Nuestra misión es seguir creciendo junto a nuestros clientes, ampliando nuestro
 <br>Gracias por formar parte de AbelShop.</p>
 <img src="https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png" width="500px" height="500px">
 </div>
-    <script>
-        document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e){
-        e.preventDefault();
 
-        const url = this.href;
-
-        document.body.classList.add("fade-out");
-
-        setTimeout(() => {
-            window.location = url;
-        }, 500);
-    });
-});
-</script>
 </body>
 </html>
