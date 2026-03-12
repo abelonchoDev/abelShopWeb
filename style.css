@@ -1,0 +1,313 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(130deg, #00022E 50%, #4f38b3 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+body.fade-out{
+    opacity: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(75, 96, 153, 0.411);
+    text-align: center;
+    gap:1rem;
+    width: .5%;
+    overflow: hidden;
+    height: 7vh;
+    border-radius: 30px;
+    transition: width 1s ease, color 1s ease;
+    backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    position: fixed;
+}
+.navbar:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(75, 96, 153, 0.411);
+    text-align: center;
+    gap:1rem;
+    width: 30%;
+    height: 7vh;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.navbar a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: transparent;
+    font-family: Arial;
+    font-weight: 100;
+    transition: transform .5s ease;
+}
+
+.navbar:hover a{
+    color:rgb(184, 184, 184);
+}
+
+.navbar a:hover{
+    transform: translateY(-10px);
+    color: rgb(255, 255, 255);
+}
+
+.banner1{
+    background-color: #6066db;
+    width: 100%;
+    margin-top: 0rem;
+    height: 100vh;
+    box-shadow: 10px 0 15px 1px #6066db;
+}
+
+.banner1 img{
+    justify-content: left;
+    margin-left: 6rem;
+    margin-top: 10rem;
+    transition: transform 2s linear ; 
+}
+
+
+@keyframes rotarZ {
+    0% {transform: rotateZ(0deg);}
+    50%   { transform: rotateZ(-20deg); }
+    100% { transform: rotateZ(20deg); }
+}
+
+
+ .banner1 img:hover {
+    animation: rotarZ 1s ease-in-out infinite alternate;
+}
+
+.banner1{
+    justify-content: space-between;
+     display: flex; 
+         margin-top: 12rem;
+         
+}
+
+
+#descripcion{
+    color: white;
+    justify-content: right;
+    width: 40%;
+    margin-top:15rem;
+    margin-right: 5rem;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#sn{
+    margin-right: 2rem;
+    -webkit-filter: brightness(-100);
+}
+
+
+.banner0 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.banner0 h3{
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    justify-content: left;
+}
+
+.titulo2{
+    color: rgb(12, 12, 124);
+    transition: letter-spacing .5s ease, text-shadow 1s ease;
+}
+
+.titulo2:hover{
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px  black;
+}
+
+.banner0 p{
+    color: white;
+    width: 30%;
+    margin-top: -1rem;
+    justify-content: left;
+}
+
+.banner-text{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 4rem;
+    font-family: "Lexend", sans-serif;
+}
+
+#boton-banner0{
+    width: 10%;
+    padding: 10px 0px;
+    margin-top: 2rem;
+    font-family: "Lexend", sans-serif;
+    border: 2px solid rgb(10, 10, 201);
+    background-color: rgb(16, 16, 187);
+    border-radius: 8px;
+    transition: box-shadow 1s ease;
+}
+
+#boton-banner0:hover{
+    box-shadow: 0 0 10px #1010bb, 0 0 20px #1010bb, 0 0 30px #1010bb  ;
+    cursor: pointer;
+}
+
+
+.linea-horiz{
+    height: .3vh;
+    width: 90%;
+    background-color: white;
+}
+
+#sobrenosotrosp{
+    font-family: "Lexend", sans-serif;
+    color: white;
+    margin-top: 3rem;
+    width: 30%;
+    margin-left: 3rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content img{
+    max-width: 700px;
+    height: auto;
+}
+
+#sobrenosotrosp{
+    max-width: 600px;
+}
+
+#search-input{
+    background-color: rgba(255, 255, 255, 0.151);
+    padding: 5px 15px;
+    margin-top: 2rem;
+    border-radius: 20px;
+    color: white;
+}
+
+
+.buscar i{
+    color: white;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+#formulario-titulo{
+    font-family: "Lexend", sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    background-color: rgba(240, 248, 255, 0.158);
+    
+    width: 90%;
+    max-width: 400px;
+
+    padding: 25px;
+    height: 60vh;
+    margin-top: 3rem;
+
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.formulario label{
+    margin-top: 5px;
+}
+
+.formulario input, #comentarios{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid white;
+
+    width: 95%;
+    height: 35px;
+
+    background-color: #f0f8ff0c;
+    border-radius: 3px;
+
+    font-family: "Lexend", sans-serif;
+    color: white;
+
+    padding-left: 10px;
+}
+
+
+#enviar-form{
+    padding: 10px 30px;
+    margin-top: 2%;
+    align-self: center;
+    background: #d678e91a;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid #ffffff4d;
+    box-shadow: 0 8px 32px #0000004d;
+    transition: background 1s ease, transform 1s ease;
+}
+
+#enviar-form:hover{
+    background:#b253e94f;
+    transform: translateY(-5PX);
+}
+
+#comentarios{
+    width: 95%;
+    padding-top: 1rem;
+    height: 40%;
+}
+
+.obligatorio{
+    color: red;
+}
+
+.buscar{
+    margin-left: 70%;
+}
+
+.buscar input{
+    border: none;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.493);
+}
+
+.fa-solid fa-magnifying-glass{
+    margin-top: 1rem;
+}
+

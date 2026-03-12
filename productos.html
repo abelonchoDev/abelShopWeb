@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbelShop | Productos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icono.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <h1 id="formulario-titulo">Productos</h1>
+    <div class="linea-horiz"></div>
+    <div class="buscar">
+    <input id="search-input" type="search">
+     <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <script>
+        document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+
+        const url = this.href;
+
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location = url;
+        }, 500);
+    });
+});
+</script>
+</body>
+</html>

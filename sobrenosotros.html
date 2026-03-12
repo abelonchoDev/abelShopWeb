@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbelShop | Productos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icono.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="formulario-titulo">Sobre Nosotros</h1>
+    <div class="linea-horiz"></div>
+<div class="content">
+    <p id="sobrenosotrosp">
+
+Bienvenido a AbelShop,<br> tu tienda de confianza donde la calidad, el buen servicio y los mejores precios se unen para ofrecerte una experiencia de compra sencilla y segura.
+
+<br>En AbelShop trabajamos cada día para ofrecer a nuestros clientes una selección de productos cuidadosamente elegidos, buscando siempre el equilibrio entre calidad, utilidad y precio. <br>Nuestro objetivo es que encuentres lo que necesitas de forma rápida y con total confianza.
+
+Creemos que una buena tienda no solo vende productos, sino que también ofrece un servicio cercano y transparente.<br> Por eso, en AbelShop nos esforzamos en brindar atención al cliente, resolver dudas y mejorar constantemente para ofrecer la mejor experiencia posible.
+
+Nuestra misión es seguir creciendo junto a nuestros clientes, ampliando nuestro catálogo y manteniendo siempre el compromiso con la satisfacción de quienes confían en nosotros.
+
+<br>Gracias por formar parte de AbelShop.</p>
+<img src="https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png" width="500px" height="500px">
+</div>
+    <script>
+        document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+
+        const url = this.href;
+
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location = url;
+        }, 500);
+    });
+});
+</script>
+</body>
+</html>

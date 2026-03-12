@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbelShop | Inicio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icono.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <menu class="navbar">
+        <a href="./index.html">
+            <h4>Inicio</h4>
+        </a>
+         <a href="./productos.html">
+            <h4>Productos</h4>
+        </a>
+         <a href="./contacto.html">
+            <h4>Contacto</h4>
+        </a>
+         <a id="sn" href="./sobrenosotros.html">
+            <h4>Sobre nosotros</h4>
+            </a>
+    </menu>
+    <div class="banner0">
+      <div class="banner-text">
+        <h3>Bienvenido a <span class="titulo2"><br>AbelShop</span></h3>
+        <p>Tu tienda de videojuegos favorita, donde podrás comprar juegos, accesorios para la consola, como mandos, joysticks, o figuras tipo, playmovils, funko-pops... Y muchas cosas más.</p>
+        <a href="./contacto.html">
+        <button id="boton-banner0">Contacta</button>
+      </a>
+      </div>
+        
+    </div>
+
+        <script>
+        document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+
+        const url = this.href;
+
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location = url;
+        }, 500);
+    });
+});
+</script>
+</body>
+</html>
